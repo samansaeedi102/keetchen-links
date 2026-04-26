@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    var path = window.location.pathname;
+    var vendorMatch = path.match(/\/vendor\/([^\/]+)/);
+    if (vendorMatch) {
+      window.location = 'keetchen://vendor/' + vendorMatch[1];
+    }
+  </script>
+</head>
+<body style="font-family:sans-serif;text-align:center;padding-top:60px">
+  <p>Opening in Keetchen...</p>
+  <p style="font-size:12px;color:#999">If the app doesn't open, make sure Keetchen is installed.</p>
+</body>
+</html>
